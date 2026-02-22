@@ -1,0 +1,25 @@
+   Compiling zhuanzhuan v0.1.0 (D:\AI\zhuanzhuan)
+error[E0433]: failed to resolve: could not find `ClickType` in `tray_icon`
+   --> src\main.rs:118:47
+    |
+118 |             if event.click_type == tray_icon::ClickType::Left {
+    |                                               ^^^^^^^^^ could not find `ClickType` in `tray_icon`
+
+warning: use of deprecated method `auto_launch::AutoLaunchBuilder::set_use_launch_agent`: Use `set_macos_launch_mode` instead
+  --> src\main.rs:62:14
+   |
+62 |             .set_use_launch_agent(true)
+   |              ^^^^^^^^^^^^^^^^^^^^
+   |
+   = note: `#[warn(deprecated)]` on by default
+
+error[E0609]: no field `click_type` on type `TrayIconEvent`
+   --> src\main.rs:118:22
+    |
+118 |             if event.click_type == tray_icon::ClickType::Left {
+    |                      ^^^^^^^^^^ unknown field
+
+Some errors have detailed explanations: E0433, E0609.
+For more information about an error, try `rustc --explain E0433`.
+warning: `zhuanzhuan` (bin "zhuanzhuan") generated 1 warning
+error: could not compile `zhuanzhuan` (bin "zhuanzhuan") due to 2 previous errors; 1 warning emitted
